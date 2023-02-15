@@ -1,0 +1,50 @@
+/*on this lab I tried to change as little code as possible from the original lab, but I believe
+    I was able to follow all the steps required*/
+
+/* added background color, set viewport to 80 and added a border as requested on step 5*/
+.wrapper {
+    width: 80vw;
+    margin: 0 auto;
+    background-color: #e4eaef;
+    color: #333;
+    text-align: center;
+    border: solid;
+    border-color: #000;
+}
+
+/* It was required to add two diferent filters on step 3, so I added the first one to the original
+    img and the second filter will show when you hover the mouse over the img */
+
+/* I also made use of max-width in order to make it responsive, and I set the img to 90%
+as requested on step 6 of the lab, I will also add code for the background color as requested */
+img {
+    max-width: 90%;
+    height: auto;
+    filter: grayscale(100%);
+    background-color: #e4eaef;
+}
+
+/* I added the greyscale when you hover over the img as the second filter option */
+img:hover {
+    transform: scaleX(-1);
+    filter: sepia(100%);
+}
+
+/*
+    I added this background img to the paragrath as I had to add one to some element as request on
+    lab I originally planned on having this img as the background og the whole .wrapper but that 
+    would cover up almost all of the code requires in other steps of the lab, so I added it here 
+    where it would not get in the way
+*/
+main>p {
+    text-align: left;
+    background-image: url(assets/background_img.jpg);
+}
+
+li:nth-child(odd) {
+    font-weight: bold;
+}
+
+li {
+    text-align: left;
+}
